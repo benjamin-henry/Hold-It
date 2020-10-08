@@ -1,5 +1,5 @@
 import React, { Component, useRef } from 'react'
-import { Text, StyleSheet, View, TouchableOpacity, Animated } from 'react-native'
+import { Text, StyleSheet, View, TouchableOpacity } from 'react-native'
 import {setScreenOrientation} from '../ScreenParameters/orientation'
 
 import Tile from '../Tile/tile'
@@ -13,8 +13,7 @@ export default class StandardMode extends Component {
             level:1,
             leftPanelVisible:true,
             tilesMasked:false,
-            expectedNextValue:0,
-            tileContainerBorderOpacity: new Animated.Value(0.)
+            expectedNextValue:0
         }
     }
 
